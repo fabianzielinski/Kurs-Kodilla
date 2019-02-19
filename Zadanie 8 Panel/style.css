@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*   My css  */
+
+h2 {
+    color: #505050;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.social {
+    margin: 0 auto;
+    width: 500px;
+    text-align: center;
+    padding: 50px;
+}
+
+.icon-btn {
+    width: 75px;
+    height: 75px;
+    border: 0;
+    background-color: #FFFFF;
+    border-radius: 50%;
+    margin: 0;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+.icon-btn:hover {
+    transform: scale(1.10);
+}
+
+.twitter {
+    color: #4099FF;
+}
+
+.facebook {
+    color: #B5998;
+}
+
+.google-plus {
+    color: #DB5A3C;
+}
+
+.instagram {
+    color: #5C3D2E;
+}
+
+.github {
+    color: #4183C4;
+}
+
+.twitter:hover {
+    background-color: #4099FF;
+    color: #FFFFFF;
+}
+
+.facebook:hover {
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.google-plus:hover {
+    background-color: #DB5A3C;
+    color: #FFFFFF;
+}
+
+.instagram:hover {
+    background-color: #5C3D2E;
+    color: #FFFFFF;
+}
+
+.github:hover {
+    background-color: #4183C4;
+    color: #FFFFFF;
+}
