@@ -50,8 +50,6 @@ table {
     border-spacing: 0;
 }
 
-
-
 /* Start my css */
 
 * {
@@ -94,17 +92,17 @@ section .container {
     text-align: center;
 }
 
-header>nav ul {
+header > nav ul {
     padding: 0;
     list-style-type: none;
     float: right;
 }
 
-header>nav ul>li {
+header > nav ul > li {
     display: inline-block;
 }
 
-header>nav ul>li>a {
+header > nav ul > li > a {
     line-height: 50px;
     padding: 0 20px;
     display: block;
@@ -113,12 +111,14 @@ header>nav ul>li>a {
     text-transform: uppercase;
 }
 
-header>nav ul>li>a:hover {
+header > nav ul > li > a:hover {
     background-color: #515452;
 }
 
-header>nav img {
+header > nav img {
+    float: left;
     padding: 10px 0;
+    margin: 0 100px;
 }
 
 /* Jumbotron */
@@ -132,7 +132,7 @@ header>nav img {
 }
 
 .slogan {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0, 0, 0, .6);
     color: #FFF;
     font-size: 40px;
     height: auto;
@@ -142,12 +142,12 @@ header>nav img {
     text-align: center;
     margin: calc(50vh - 80px) 0;
     padding: 80px 60px;
-   /* border: 2px solid #FFF; */
+    /* border: 2px solid #FFF; */
 }
 
 /* Buttons */
 
-[class*="col-"]{
+[class*="col-"] {
     float: left;
     min-height: 1px;
     height: 150px;
@@ -178,7 +178,6 @@ header>nav img {
 .col-offset-9 {margin-left: 75%;}
 .col-offset-10 {margin-left: 83.33%;}
 .col-offset-11 {margin-left: 91.66%;}
-.col-offset-12 {margin-left: 100%;}
 
 .search, 
 .laptop,
@@ -211,7 +210,7 @@ header>nav img {
     display: inline-block;
     margin: 30px 5%;
     width: 800px;
- }
+}
 
 p {
     display: inline-block;
@@ -234,7 +233,6 @@ h4 {
 
 .search h4 {
     margin: 40px 0 0 -55px;
-    
 }
 
 .laptop h4 {
@@ -247,10 +245,11 @@ h4 {
 
 /* Featured Works */
 
-section>.featured-works {
+section > .featured-works {
     padding: 40px;
     width: 100%;
     max-width: 1200px;
+    margin: 0 auto;
 }
 
 h2 {
@@ -260,7 +259,7 @@ h2 {
     font-weight: bolder;
 }
 
-.featured-works>p {
+.featured-works > p {
     color: #bcbcbd;
     font-size: 15px;
     display: inline-block;
@@ -292,30 +291,29 @@ h2 {
 .foto-9 {background-image: url('https://images.pexels.com/photos/374857/pexels-photo-374857.jpeg');}
 .foto-10 {background-image: url('https://images.pexels.com/photos/129830/pexels-photo-129830.jpeg');}
 
-[class*="col-"]>.layer {
+[class*="col-"] > .layer {
     position: absolute;
-    background-color: rgba(256, 256, 256, 0.0);
+    background-color: rgba(256, 256, 256, .0);
     color: rgba(256, 256, 256, 0.0);
     padding: 60px 45px;
     left: 0px;
     top: 0px;
     font-size: 15px;
+    display: none;
 }
 
-[class*="col-"]>.layer:hover { 
+[class*="col-"]:hover > .layer { 
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, .5);
     color: rgba(0, 0, 0, 1.0);
     cursor: pointer;
     width: 100%;
     height: 150px;
+    display: block;
 }
 
-.layer>i {
+.layer > i {
     margin: 0 15px;
-}
-
-.layer>i:hover {
     display: inline;
     padding: 5px 5px 5px 5px;
     border-radius: 20%;
@@ -334,19 +332,19 @@ h2 {
 
 .circle {
     /*background-image: url('https://images.pexels.com/photos/1939485/pexels-photo-1939485.jpeg'); */
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgba(0, 0, 0, .05);
     border-radius: 50%;
     height: 150px;
     width: 150px;
     margin:  20px auto;
     display: inline-block;
     position: relative;
-    color: rgba(256, 256, 256, 0.0);
+    color: rgba(256, 256, 256, .0);
     transition: background-color 2s, color 2s;
 }
 
 [class*="col-"] .circle:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .7);
     color: rgba(256, 256, 256, 1.0);
     padding-bottom: 65px;
     z-index: 1;
@@ -404,6 +402,7 @@ h2 {
     height: 80%;
     padding: 30px auto 0 auto;
     text-align: center;
+    line-height: 1.4;
     position: relative;
     top: 50px;
     background-color: white;
@@ -448,6 +447,7 @@ h2 {
 .bfooter {
     width: 100vw;
     background-color: #313332;
+    z-index: -1;
 }
 
 .bfooter .row {
@@ -456,20 +456,36 @@ h2 {
     height: 200px;
     margin: 0 auto;
     font-family: 'Crete Round', serif;
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .bfooter .row [class*="col-"] h6 {
     text-transform: uppercase;
     font-weight: 800;
     text-align: left;
-    position: relative;
     left: 30px;
+    position: relative;
+    z-index: 0;
 }
 
-.bfooter .row [class*="col-"] h7 {
+.bfooter .row [class*="col-"] h6::after {
+    position: absolute;
+    top: 5px;
+    left: 120px;
+    content: "  -----------------";
+    color: rgba(256, 256, 256, 0);
+    border-top: 3px solid white;
+}
+
+.bfooter h7 {
+    display: block;
     font-weight: 700;
-    padding: 20px auto 20px 0;
+    margin: 0 0 15px 0;
+}
+
+.bfooter h6::after {
+    content: " ";
+    border-top: 5px solid white;
 }
 
 .bfooter .row [class*="col-"] p {
@@ -499,12 +515,22 @@ h2 {
 }
 
 .icon {
-    font-size: 15px;
+    display: inline-block;
+    font-size: 20px;
     color: #FFF;
     margin: 5px;
-    padding: 10px;
+    padding: 10px 10px;
+    height: 40px;
+    width: 40px;
     background-color: #00C8EA;
+    background-size: cover;
     border: 0
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background-color: #08bfc9;
 }
 
 /* footer */
