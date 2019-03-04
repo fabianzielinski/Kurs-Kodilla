@@ -80,17 +80,18 @@ body {
 }
 
 .nav {
-    height: 70px;
+    height: 160px;
 }
 
 .nav__logo {
-    margin: 20px auto;    
+    margin: 20px 30px;    
 }
 
 .nav__links {
     display: inline-block;
     float: right;
-    margin: 20px auto;
+    margin: 70px auto;
+    font-size: 30px;
 }
 
 .nav__links--li {
