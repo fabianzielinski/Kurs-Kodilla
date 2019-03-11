@@ -1,0 +1,90 @@
+body {
+    max-width: 1200px;     
+}
+
+.container {
+    display: flex;    
+    justify-content: flex-end;
+    border: 2px solid red;
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    margin: auto 20px;
+}
+
+a {
+    text-decoration: none;    
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 2px solid red;
+    background-image: 
+url('https://images.pexels.com/photos/1959055/pexels-photo-1959055.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    color: lightblue;
+}
+
+.gallery {
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.foto {
+     width: 400px;
+     height: 400px;
+     background-color: green;
+     border: 2px solid blue;
+}
+
+.cards {
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+}
+
+.text {
+    max-width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightblue;
+    /*border: 1px solid red;*/
+    margin: 10px;
+}
+
+.footer {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.rights {
+    flex: 1;    
+    /*border: 2px solid blue;*/
+}
+
+.company {
+    flex-grow: 2;
+    flex: 1;
+    /*border: 2px solid blue;*/
+}
+
+.adres {
+    flex: 1; 
+    /*border: 2px solid blue;*/
+}
